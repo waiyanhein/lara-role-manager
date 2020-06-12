@@ -1,0 +1,13 @@
+{
+    "name": "waiyanhein/lara-role-manager",
+    "description": "Library to manage the user roles for Laravel",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Wai Yan Hein",
+            "email": "waiyanhein.uk@gmail.com"
+        }
+    ],
+    "minimum-stability": "dev",
+    "require": {}
+}
