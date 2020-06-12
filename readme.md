@@ -1,14 +1,14 @@
-###Package to manage user roles for Laravel application
+### Package to manage user roles for Laravel application
 
 Having to write code for managing user roles each time you create a new Laravel project is  a repeating project. Sometimes, you will try to copy the existing code form the other projects, such as Role model class.
 You will need to create a model class for role, plus, migration file for it. Then you also have to define the relationship between user and role. Then you will have to write methods for related logic for example, checking if the user belongs to a role. This package includes all the necessary common logic and components fo handling user roles for Laravel application.
 
 
-####installation
+#### installation
 
 - `composer require waiyanhein/lara-role-manager`
 
-####Publishing config file to define roles
+#### Publishing config file to define roles
 
 -  `php artisan vendor:publish`
 
@@ -23,18 +23,18 @@ Then roles.php file will be published under the app/config folder. You can defin
 `
 The array key is the unique code and the value is the title to be displayed to the end users.
 
-####Migrating the table
+#### Migrating the table
 - Then you migrate the tables for the roles. `php artisan migrate`
 
-####Usages
+#### Usages
 
 You will need to place the `Waiyanhein\LaraRoleManager\Traits\RoleManager` trait into the user model class.
 
-####Seeding data (Optional)
+#### Seeding data (Optional)
 If you are seeding the roles into the database, you can seed the data from the `config/roles.php` calling the following method in your seeder class.
 - `\Waiyanhein\LaraRoleManager\LaraRolesSeeder::seed();`
 
-####Methods
+#### Methods
 Then you can use the following methods based on your need.
 
 `Waiyanhein\LaraRoleManager\Models\Role` class
