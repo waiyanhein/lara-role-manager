@@ -4,10 +4,8 @@ return [
     //@todo: define your roles here,
     //example
     /*
-    [
-        1 => 'Super admin',
-        2 => 'Manager',
-        3 => 'Staff',
-    ]
+    123 => 'Superadmin',
+    223 => 'Restaurant Admin',
+    432 => 'Staff',
     */
 ];
