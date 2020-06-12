@@ -8,6 +8,8 @@ You will need to create a model class for role, plus, migration file for it. The
 
 - `composer require waiyanhein/lara-role-manager`
 
+Then you need to register `Waiyanhein\LaraRoleManager\LaraRoleManagerServiceProvider` provider in the `config/app.php` file.
+
 #### Publishing config file to define roles
 
 -  `php artisan vendor:publish`
