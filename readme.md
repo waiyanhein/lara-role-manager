@@ -54,3 +54,6 @@ You embed this trait into your user model class so that your user model class ca
 - `attachRoles($codes)` - This is similar to `attachRole` function. Instead, you pass an array of codes to assign multiple roles to the user at the same time.
 - `hasRole($code)` - Checks if the user has a role. This method will return boolean value. For example: `$user->hasRole(User::ROLE_ADMIN)`.
 - `hasRoles($codes)`. This method is very similar to `hasRole` method. Instead, this will check if the user belongs to all the roles which are pass as an array to the method. If any of the role is missing, it will return false.
+
+#### Note
+This package already has a factory class for Role model if you are going to write tests. You do not need to create new factory class for Role model.
